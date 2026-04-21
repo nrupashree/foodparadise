@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- NAVIGATION -->
+<div class="nav"> 
+<a href="index.html">Home</a> 
+<a href="menu.html">Menu</a> 
+<a href="about.html">About</a> 
+<a href="gallery.html">Gallery</a> 
+<a href="services.html">Services</a> 
+<a href="contact.html">Contact</a> 
+<a href="order.html">Order</a> 
+</div> 
+
+    <meta charset="UTF-8">
+    <title>Food Menu</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        /* NAVIGATION BAR */
+.nav { 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background: rgba(255, 252, 252, 0); 
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+    padding: 12px; 
+    z-index: 1000; 
+} 
+
+.nav a { 
+    text-decoration: none; 
+    color: white; 
+    padding: 8px 14px; 
+    background: #ff6b6b; 
+    border-radius: 20px; 
+    font-size: 14px; 
+} 
+
+.nav a:hover { 
+    background: #e63946; 
+} 
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            text-align: center;
+        }
+
+        /* MENU SECTION TITLE */
+        .info {
+            padding-top: 40px;
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        h1 {
+            margin-top: 10px;
+            font-size: 40px;
+            color: #333;
+        }
+
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 40px;
+            gap: 25px;
+        }
+
+        .menu-card {
+            width: 250px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .menu-content {
+            padding: 15px;
+        }
+
+        .menu-content h3 {
+            margin: 10px 0;
+            color: #444;
+        }
+
+        .price {
+            color: #e63946;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #ff6b6b;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #e63946;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ✅ MENU SECTION (SCROLL TARGET) -->
+<div id="menu" class="info">
+    🍽️ Menu
+</div>
+
+<h1>Our Food Menu</h1>
+
+<div class="menu-container">
+
+    <div class="menu-card">
+        <img src="https://www.schwartz.co.uk/-/media/project/oneweb/schwartz/recipes/recipe_image_update/march_18_2025/easy_pizza_recipe_800x800.webp">
+        <div class="menu-content">
+            <h3>Delicious Pizza</h3>
+            <p class="price">₹199</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+    </div>
+
+    <div class="menu-card">
+        <img src="https://www.sargento.com/assets/Uploads/Recipe/Image/cheddarbaconcheeseburger__FillWzgwMCw4MDBd.jpg">
+        <div class="menu-content">
+            <h3>Cheese Burger</h3>
+            <p class="price">₹149</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+    </div>
+
+    <div class="menu-card">
+        <img src="https://sincerelyasma.com/wp-content/uploads/2024/09/creamypenne.jpg">
+        <div class="menu-content">
+            <h3>Creamy Pasta</h3>
+            <p class="price">₹179</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+    </div>
+
+    <div class="menu-card">
+        <img src="https://www.licious.in/blog/wp-content/uploads/2022/06/chicken-hyderabadi-biryani-01.jpg">
+        <div class="menu-content">
+            <h3>Chicken Biryani</h3>
+            <p class="price">₹249</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+    </div>
+
+    <div class="menu-card">
+        <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/06/Spicy-Chicken-Hakka-Noodles-Recipe.jpg">
+        <div class="menu-content">
+            <h3>Hakka Noodles</h3>
+            <p class="price">₹129</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+    </div>
+
+    <div class="menu-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg">
+        <div class="menu-content">
+            <h3>Ice Cream</h3>
+            <p class="price">₹99</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
