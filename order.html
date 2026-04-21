@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <!-- NAVIGATION -->
+<div class="nav"> 
+<a href="index.html">Home</a> 
+<a href="menu.html">Menu</a> 
+<a href="about.html">About</a> 
+<a href="gallery.html">Gallery</a> 
+<a href="services.html">Services</a> 
+<a href="contact.html">Contact</a> 
+<a href="order.html">Order</a> 
+</div> 
+
+
+    <meta charset="UTF-8">
+    <title>Order Food</title>
+    <style>
+
+         /* NAVIGATION BAR */
+.nav { 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background: rgba(255, 252, 252, 0); 
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+    padding: 12px; 
+    z-index: 1000; 
+} 
+
+.nav a { 
+    text-decoration: none; 
+    color: white; 
+    padding: 8px 14px; 
+    background: #ff6b6b; 
+    border-radius: 20px; 
+    font-size: 14px; 
+} 
+
+.nav a:hover { 
+    background: #e63946; 
+} 
+
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+            /* LESS DARK OVERLAY → background more visible */
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                        url('https://www.foodchow.com/Images/home/order-food-online.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 90%;
+
+            /* CHANGED FROM WHITE → LIGHT COLOR */
+            background: rgba(255, 245, 240, 0.95);
+
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ff6b6b;
+            font-size: 16px;
+            background: #fff0f0;
+            color: #333;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border: 1px solid #e63946;
+            background: #ffe5e5;
+        }
+
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        button {
+            padding: 12px;
+            border: none;
+            border-radius: 25px;
+            background: #ff6b6b;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #e63946;
+        }
+
+        .note {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🛒 Place Your Order</h1>
+
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+
+            <select required>
+                <option value="">Select Food Item</option>
+                <option>Pizza</option>
+                <option>Burger</option>
+                <option>Pasta</option>
+                <option>Biryani</option>
+                <option>Noodles</option>
+                <option>Ice Cream</option>
+            </select>
+
+            <input type="number" placeholder="Quantity" min="1" required>
+
+            <textarea placeholder="Delivery Address" required></textarea>
+
+            <button type="submit">Order Now</button>
+        </form>
+
+        <p class="note">
+            * Your order will be confirmed via phone call.
+        </p>
+    </div>
+
+</body>
+</html>
